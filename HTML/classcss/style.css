@@ -1,0 +1,25 @@
+body{
+    background-color:aquamarine;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: 1200;
+    font-style:inherit;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 10px rgba(255, 255, 0, 0.626);
+    color: black;
+    display: inline-block;
+}
+
+img{
+    border: 2px solid #F04;
+    /* border-radius:50%; */
+    float: centre;
+    margin-right: 20px;
+    padding: 3px;
+}
+
+
