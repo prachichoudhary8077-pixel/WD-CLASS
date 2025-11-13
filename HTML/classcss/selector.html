@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* #main p{
+            color:chartreuse;
+        } */
+        /* #inside p{
+            background-color: crimson;
+        } */
+        /* #main>p{
+            background-color:coral;
+        } */
+        /* #main p{
+            background-color:darkgreen;
+        } */
+
+        /* #main ~ p{
+            background-color:darkkhaki;
+        } */
+        /* a:link{
+            text-decoration:none; font-size: 40px;
+        } */
+        /* a:active{
+            color:khaki;
+        } */
+        /* a:hover{
+            color:dodgerblue; font-size: 25px;
+        } */
+
+        #main .odd{
+            color:chartreuse;
+        }
+        #main p:nth-child(even){
+            color:crimson;
+        }
+        #main p:first-letter{
+            color:darkmagenta; font-size:30px;
+        }
+        #main p:first-line{
+            background-color:gold;
+        }
+        #main p:after{
+            content:"read more";
+            color:aqua;
+            font-size:40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- combination -->
+     <!-- div first -->
+    <div id="main">
+        <p class="odd">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, architecto tempore soluta vitae possimus voluptatem in atque, quidem praesentium facere fugiat, voluptatum ipsum. Eligendi nesciunt nulla consectetur. Sit, harum eaque. Libero deleniti facere animi optio iure quae error cum?
+
+        </p>
+        <p class="even">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque ipsum esse ratione consequatur ex blanditiis eum, ad ut soluta adipisci sapiente quae reprehenderit dolores perferendis?
+        </p>
+        <p class="odd">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint totam eveniet culpa excepturi ipsam, nemo, optio dolore molestiae, assumenda dolorem facilis quis. Magni facere voluptas placeat illo deleniti! Deserunt hic odio in explicabo ea doloribus.
+        </p>
+        <p class="odd">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam saepe rem nihil eum dolorum fuga, tenetur dicta quae aut, itaque libero pariatur sapiente officiis optio ipsum quia accusamus, nisi dolor in iure! Facilis commodi molestias incidunt minima maxime!
+        </p>
+        <!-- inside first -->
+        <div id="inside">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quae saepe deleniti corporis vero amet culpa sapiente illo omnis! Saepe deserunt asperiores aliquam pariatur qui quo dolor voluptatem, vero repellat.
+            </p>
+        </div>
+    </div>  
+    <p id="sibling">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsa voluptatem, id molestias qui, ratione laudantium alias earum quod mollitia adipisci praesentium veniam tenetur expedita aliquam porro quos laboriosam error.
+    </p>
+    <a href="#">visit my page</a>
+    <p id="children">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt debitis et repellat similique maiores repellendus porro facere consequuntur, harum cupiditate. Quia vel commodi at. Iure saepe aliquid id minus, dignissimos ad ipsam sunt illum hic cum incidunt dolore odio distinctio soluta quis!
+    </p>
+</body>
+</html>
