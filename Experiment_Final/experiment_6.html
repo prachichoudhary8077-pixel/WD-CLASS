@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - E-commerce Product Page</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    /* Header styles */
+    .header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .header h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #ecf0f1;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e0e0e0;
+    }
+
+    /* Product section */
+    .product-section {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 2px solid #3498db;
+      border-radius: 12px;
+      background-color: #fafafa;
+    }
+
+    .product-image {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      height: fit-content;
+    }
+
+    .product-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: 3px solid #e74c3c;
+    }
+
+    .product-info {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .product-title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #ecf0f1;
+      border-left: 4px solid #27ae60;
+      border-radius: 5px;
+    }
+
+    .product-price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-bottom: 25px;
+      padding: 15px;
+      background-color: #fff3cd;
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .price-label {
+      font-size: 1rem;
+      color: #666;
+      font-weight: normal;
+    }
+
+    /* Button styles */
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .add-to-cart-btn {
+      background-color: #27ae60;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 200px;
+      height: 50px;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #219a52;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>TechStore</h1>
+    <h2>Premium Electronics & Gadgets</h2>
+  </div>
+
+  <div class="container">
+    <div class="product-section">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1637496652486-99d500bcdd18?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="iPhone 13 Pro">
+      </div>
+      
+      <div class="product-info">
+        <h2 class="product-title">iPhone 13 Pro</h2>
+        <p class="product-description">
+          Experience the ultimate in smartphone technology with the Apple iPhone 13 Pro. Featuring the powerful A15 Bionic chip, professional-grade camera system, and stunning Super Retina XDR display for unmatched performance and visual excellence.
+        </p>
+        <div class="product-price">
+          <span class="price-label">Special Price: </span>₹1,19,900
+        </div>
+        <div class="btn-container">
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="details-section">
+      <h3 class="details-title">Product Specifications</h3>
+      
+      <div class="specification-grid">
+        <div class="spec-item">
+          <h4>Display</h4>
+          <p>6.1-inch Super Retina XDR OLED Display</p>
+        </div>
+        <div class="spec-item">
+          <h4>Camera</h4>
+          <p>12MP Triple Camera System with ProRAW</p>
+        </div>
+        <div class="spec-item">
+          <h4>Processor</h4>
+          <p>A15 Bionic Chip with 6-Core CPU</p>
+        </div>
+        <div class="spec-item">
+          <h4>Storage</h4>
+          <p>128GB Internal Storage</p>
+        </div>
+        <div class="spec-item">
+          <h4>Battery</h4>
+          <p>Up to 22 Hours Talk Time</p>
+        </div>
+        <div class="spec-item">
+          <h4>Connectivity</h4>
+          <p>5G Ready with Wi-Fi 6 Support</p>
+        </div>
+      </div>
+
+      <ul class="details-list">
+        <li><strong>Display Technology:</strong> 6.1-inch Super Retina XDR OLED with ProMotion technology</li>
+        <li><strong>Camera System:</strong> 12MP triple camera system with Ultra Wide, Wide, and Telephoto lenses</li>
+        <li><strong>Performance:</strong> A15 Bionic chip with 6-core CPU and 5-core GPU for lightning-fast performance</li>
+        <li><strong>Storage Capacity:</strong> 128GB of fast internal storage for all your apps, photos, and videos</li>
+        <li><strong>Battery Life:</strong> All-day battery life with up to 22 hours talk time and wireless charging support</li>
+        <li><strong>Build Quality:</strong> Aerospace-grade aluminum frame with Ceramic Shield front glass</li>
+        <li><strong>Water Resistance:</strong> IP68 water resistance rating for peace of mind</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
