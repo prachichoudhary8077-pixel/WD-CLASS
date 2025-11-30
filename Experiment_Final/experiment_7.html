@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Simple Navigation Demo</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f6f8;
+            color:#222;
+            padding:20px;
+        }
+
+        header {
+            background:#2b8cff;
+            color:white;
+            padding:12px 16px;
+            border-radius:6px;
+            margin-bottom:16px;
+        }
+
+        /* NAV examples */
+        nav { margin-bottom:18px; }
+
+        /* Block-level link: occupies full width */
+        .block-link {
+            display:block;
+            background:#1abc9c;
+            color:white;
+            text-decoration:none;
+            padding:10px 14px;
+            border-radius:4px;
+            margin-bottom:10px;
+            width:220px;
+        }
+
+        /* Inline links (list items displayed inline) */
+        ul.inline {
+            list-style:none;
+            padding:0;
+            margin:0 0 10px 0;
+        }
+        ul.inline li { display:inline; margin-right:12px; }
+        ul.inline a { color:#2b2b2b; text-decoration:none; }
+
+        /* Inline-block links: like boxes but flow inline */
+        ul.inline-block { list-style:none; padding:0; margin:0; }
+        ul.inline-block li {
+            display:inline-block;
+            width:120px;
+            text-align:center;
+            background:#fff;
+            border:1px solid #ddd;
+            padding:8px 6px;
+            margin-right:10px;
+            border-radius:4px;
+        }
+
+        /* Float + clear example */
+        .sidebar {
+            float:left;
+            width:200px;
+            background:#fff;
+            border:1px solid #e0e0e0;
+            padding:12px;
+            border-radius:6px;
+            margin-right:16px;
+        }
+
+        .main {
+            overflow:auto; /* keeps layout simple when sidebar floats */
+            background:#fff;
+            border:1px solid #e6e6e6;
+            padding:14px;
+            border-radius:6px;
+        }
+
+        .example { padding:10px; margin:8px 0; }
+        .example.block { background:#eef9f3; }
+        .example.inline { background:#fef6e7; display:inline; }
+        .example.inline-block { background:#eef2ff; display:inline-block; width:180px; }
+
+        footer { clear:both; margin-top:14px; text-align:center; padding:10px; color:#555; }
+
+        /* small responsive tweak */
+        @media (max-width:600px) {
+            .sidebar { float:none; width:100%; margin-right:0  ; margin-bottom:12px; }
+            .example.inline-block { width:100%; display:block; }
+            .block-link { width:100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size:1.2rem;margin:0">Navigation Demo</h1>
+    </header>
+
+    <nav>
+        <!-- block: link fills its container width (useful for menu items on sidebar) -->
+        <a href="#" class="block-link">Block Link (display:block)</a>
+
+        <!-- inline: list items sit next to each other with no block spacing -->
+        <ul class="inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- inline-block: behaves like block (width/height) but flows inline -->
+        <ul class="inline-block">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">Sidebar (float:left)
+        <p style="font-size:0.95rem; margin-top:8px;">Floating sidebar stays to the left of the main area.</p>
+    </div>
+
+    <div class="main">
+        <h2 style="margin-top:0">Main Content</h2>
+        <p>This area represents the primary content. The sidebar uses <code>float:left</code>. The footer below uses <code>clear:both</code> to start below floats.</p>
+
+        <h3>Visual examples</h3>
+        <div class="example block">Block element: a <code>div</code> or <code>p</code> occupies full available width.</div>
+        <span class="example inline">Inline element: a <code>span</code> flows inside a line</span>
+        <div class="example inline-block">Inline-block: box that flows inline but accepts width/height</div>
+
+        <p style="margin-top:16px;">Resize the window or view on mobile to see responsive behavior; floating sidebar will stack above main content.</p>
+    </div>
+
+
+
+</body>
+</html>
