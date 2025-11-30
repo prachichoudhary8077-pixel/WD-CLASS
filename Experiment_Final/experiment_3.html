@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Timetable</title>
+</head>
+<body>
+
+  <h1>ABC College</h1>
+  <h2>B.Tech 2nd Year - Weekly Timetable</h2>
+
+  <table border="1" cellspacing="0" cellpadding="5">
+    <caption><b>Class Timetable</b></caption>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+
+    <tr>
+      <th>9:00–10:00</th>
+      <td rowspan="2">Database<br>Lecture</td>
+      <td>Maths</td>
+      <td>Physics</td>
+      <td>English</td>
+      <td>Chemistry</td>
+    </tr>
+
+    <tr>
+      <th>10:00–11:00</th>
+      <td rowspan="2">Maths Lab</td>
+      <td>Physics</td>
+      <td>English</td>
+      <td>Sports</td>
+    </tr>
+
+    <tr>
+      <th>11:00–12:00</th>
+      <td>Computer Networks</td>
+      <td colspan="2">Database Lab</td>
+      <td>Library</td>
+    </tr>
+
+    <tr>
+      <th>12:00–1:00</th>
+      <td colspan="5" align="center"><b>Lunch Break</b></td>
+    </tr>
+
+    <tr>
+      <th>1:00–2:00</th>
+      <td>AI</td>
+      <td>Maths</td>
+      <td rowspan="2">Project Work</td>
+      <td>Computer Networks</td>
+      <td>Workshop</td>
+    </tr>
+
+    <tr>
+      <th>2:00–3:00</th>
+      <td colspan="2">Elective Subject</td>
+      <td colspan="2">
+        <!-- Nested table example -->
+        <table border="1" cellpadding="3">
+          <caption><b>Lab Details</b></caption>
+          <tr><th>Lab</th><th>Instructor</th></tr>
+          <tr><td>Lab 1</td><td>Dr. Sharma</td></tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
