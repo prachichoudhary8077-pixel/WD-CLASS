@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: white;
+        }
+        main {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            display: grid;
+            background-color: beige;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-rows: 150px 200px 100px 200px;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box:nth-child(even) {
+            background-color: aqua;
+        }
+        .box {
+            background-color: lightgray;
+            padding: 20px;
+            font-size: 20px;
+         font-size: 20px;
+             }
+        /* @media screen and (min-width:375px) and (max-width:768px){
+            main{
+                display:grid;
+                grid-template-columns:repeat(1,1fr);
+                gap:20px;
+                background-color:chartreuse;
+            }
+        } */
+         #lft_rgt{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+         }
+         .box-left, .box-right{
+            background-color:coral;
+         }
+         
+    </style>
+</head>
+<body>
+
+    <main>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime numquam eligendi repudiandae soluta fugiat. Doloribus eveniet vitae impedit accusantium, dolore nemo, esse, laboriosam porro quis nisi qui voluptatum doloremque non cumque excepturi ipsam beatae!</p>
+        <div class="box">first</div>
+        <div class="box" id="lft_rgt">
+            <div class="box-left"> left</div>
+            <div class="box-right"> right</div>
+        <div class="box">third</div>
+    </main>
+    
+</body>
+</html>
