@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Page</title>
+
+<style>
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+/* Product Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>My Store</h2>
+    <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<h1>Latest Products</h1>
+
+<div class="products">
+    <div>
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=150" width="150">
+        <h3>Gaming Laptop</h3>
+        <p>$999</p>
+    </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=150" width="150">
+        <h3>Smartphone</h3>
+        <p>$699</p>
+    </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=150" width="150">
+        <h3>Headphones</h3>
+        <p>$199</p>
+    </div>
+</div>
+
+</body>
+</html>
