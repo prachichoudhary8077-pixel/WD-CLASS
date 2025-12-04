@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone E-Commerce</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #34495e;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav .search input {
+            padding: 6px;
+        }
+
+        nav .icons a {
+            text-decoration: none;
+            color: orange;
+            font-weight: bold;
+        }
+
+        /* Mobile Menu Icon */
+        .menu-btn {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* FEATURED PRODUCTS */
+
+        .container {
+            padding: 20px;
+        }
+
+        .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            width: 30%;
+            background: white;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .product-card img {
+            width: 150px;
+            height: 120px;
+        }
+
+        .product-card button {
+            padding: 10px 15px;
+            border: none;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+
+        .copy {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+
+        /* -------------------- RESPONSIVE -------------------- */
+
+        @media(max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 60px;
+                background: #34495e;
+                width: 100%;
+                left: 0;
+                text-align: center;
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .product-card {
+                width: 45%;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .product-card {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <div class="header">🛒 ShopZone E-Commerce</div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ShopZone</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <ul id="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+
+        <div class="icons">
+            <a href="#">🛍 Cart (2)</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h2>🌟 Featured Products</h2>
+
+        <div class="products">
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=150" alt="">
+                <h3>💻 Gaming Laptop</h3>
+                <p>$999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=150" alt="">
+                <h3>📱 Smartphone</h3>
+                <p>$699</p>
+                <button style="background:#27ae60;">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=150" alt="">
+                <h3>🎧 Headphones</h3>
+                <p>$199</p>
+                <button style="background:#e74c3c;">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-section">
+            <div>
+                <b>📞 Contact Us</b><br><br>
+                Email: info@shopzone.com<br>Phone: +1-234-567-890
+            </div>
+
+            <div>
+                <b>ℹ️ Help</b><br><br>
+                <a href="#">FAQ</a><br>
+                <a href="#">Return Policy</a>
+            </div>
+
+            <div>
+                <b>🔗 Follow Us</b><br><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copy">&copy; 2025 ShopZone — All Rights Reserved.</div>
+
+    <!-- JAVASCRIPT FOR MENU -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu-items").classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
