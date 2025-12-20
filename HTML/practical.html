@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy B.Tech 1st Year Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 320px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .photo {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .course {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stat-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .content {
+            padding: 25px 20px;
+        }
+
+        .skills {
+            margin-bottom: 20px;
+        }
+
+        .skills h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+
+        .contact h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                margin: 10px;
+            }
+            .header {
+                padding: 25px 15px;
+            }
+            .name {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="photo">🧑‍🎓</div>
+            <div class="name">Rahul Kumar</div>
+            <div class="course">B.Tech CSE - 1st Year</div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-num">8.5</div>
+                <div class="stat-text">SGPA</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">5</div>
+                <div class="stat-text">Projects</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">2028</div>
+                <div class="stat-text">Passout</div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill-list">
+                    <span class="skill">C Programming</span>
+                    <span class="skill">HTML/CSS</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Git</span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <div class="contact-item">
+                    <div class="icon">📧</div>
+                    <span>rahul@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">📱</div>
+                    <span>+91 98765 43210</span>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">🏠</div>
+                    <span>Delhi, India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

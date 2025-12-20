@@ -6,6 +6,7 @@
     <title>ShopZone E-Commerce</title>
 
     <style>
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -23,6 +24,7 @@
         }
 
         /* NAVBAR */
+
         nav {
             background: #34495e;
             padding: 12px 20px;
@@ -64,6 +66,7 @@
         }
 
         /* Mobile Menu Icon */
+
         .menu-btn {
             display: none;
             font-size: 26px;
@@ -107,6 +110,7 @@
         }
 
         /* Footer */
+
         footer {
             background: #2c3e50;
             color: white;
@@ -133,7 +137,7 @@
         }
 
         /* -------------------- RESPONSIVE -------------------- */
-
+        
         @media(max-width: 768px) {
             nav ul {
                 display: none;
@@ -146,31 +150,26 @@
                 flex-direction: column;
                 padding: 10px 0;
             }
-
             nav ul.show {
                 display: flex;
             }
-
             .menu-btn {
                 display: block;
             }
-
             .search {
                 display: none;
             }
-
             .product-card {
                 width: 45%;
             }
         }
-
         @media(max-width: 480px) {
             .product-card {
                 width: 100%;
             }
         }
-
     </style>
+
 </head>
 <body>
 
@@ -180,9 +179,7 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">ShopZone</div>
-
         <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
         <ul id="menu-items">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
@@ -190,7 +187,6 @@
             <li><a href="#">Categories</a></li>
             <li><a href="#">Account</a></li>
         </ul>
-
         <div class="icons">
             <a href="#">🛍 Cart (2)</a>
         </div>
@@ -199,8 +195,8 @@
     <!-- MAIN CONTENT -->
     <div class="container">
         <h2>🌟 Featured Products</h2>
-
         <div class="products">
+
             <!-- PRODUCT 1 -->
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=150" alt="">
@@ -234,13 +230,11 @@
                 <b>📞 Contact Us</b><br><br>
                 Email: info@shopzone.com<br>Phone: +1-234-567-890
             </div>
-
             <div>
                 <b>ℹ️ Help</b><br><br>
                 <a href="#">FAQ</a><br>
                 <a href="#">Return Policy</a>
             </div>
-
             <div>
                 <b>🔗 Follow Us</b><br><br>
                 <a href="#">Instagram</a><br>
@@ -257,6 +251,6 @@
             document.getElementById("menu-items").classList.toggle("show");
         }
     </script>
-
+    
 </body>
 </html>

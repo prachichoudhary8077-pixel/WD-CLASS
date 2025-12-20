@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-LAYOUT-STRUCTURE</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color:balck;
+            font-size: 20px;
+            display:flex;
+            justify-content: center;
+            
+        }
+        .container{
+            height:800px;
+            width:800px;
+            display:grid;
+            background-color:grey;
+            grid-template-columns:1fr, 1fr, 1fr;
+            grid-template-rows:1fr, 2fr, 2fr, 1fr;
+            gap:20px;
+            padding: 10px;
+            
+        }
+        .box{
+            background-color:rgb(110, 103, 160);
+            border-style:solid;
+            border-width:5px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            border-radius:20px;
+        }
+        .header{
+            grid-column-start:1;
+            grid-column-end:4;
+        }
+        .footer{
+            grid-column-start:1;
+            grid-column-end:4;
+            background-color:aqua;
+        }
+        .sidebar{
+            grid-row-start:2;
+            grid-row-end:4;
+            background-color:lightsalmon;
+        }
+        .content1 {
+            grid-column-start:2;
+            grid-column-end:4;
+            background-color:lightcoral;
+        }
+        .content2{
+            background-color:lightsteelblue;
+        }
+        
+        .content3{
+            background-color:lightyellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box header">header</div>
+        <div class="box sidebar">sidebar</div>
+        <div class="box content1">content 1</div>
+        <div class="box content2">content 2</div>
+        <div class="box content3">content 3</div>
+        <div class="box footer">footer</div>
+    </div>
+
+</body>
+</html>
